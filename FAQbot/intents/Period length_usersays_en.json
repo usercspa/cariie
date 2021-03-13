@@ -1,0 +1,73 @@
+[
+  {
+    "id": "6b815f44-8678-4e7f-9ceb-a092c19a532e",
+    "data": [
+      {
+        "text": "when it stops",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "8ee69df6-0968-4387-aabc-cf748ec276a8",
+    "data": [
+      {
+        "text": "still bleeding after ",
+        "userDefined": false
+      },
+      {
+        "text": "5 days",
+        "meta": "@sys.duration",
+        "alias": "duration",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "d0c50d36-b1e0-4bb7-9451-8356001bb357",
+    "data": [
+      {
+        "text": "when will this ends",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "6d17bc97-0414-4225-b213-df849d6edccf",
+    "data": [
+      {
+        "text": "what should the normal length be",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "1830d8bc-6530-4442-8e27-449a5b7410e2",
+    "data": [
+      {
+        "text": "what long is a period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

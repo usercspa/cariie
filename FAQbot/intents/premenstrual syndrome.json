@@ -1,0 +1,35 @@
+{
+  "id": "29fe593f-c894-45a4-a181-0f8e2c1b443c",
+  "name": "premenstrual syndrome",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Changes in your body\u0027s hormone levels before your period can cause physical and emotional changes.\n\nThis is known as PMS (premenstrual syndrome) or PMT (premenstrual tension). These symptoms usually improve when your period starts and disappear a few days afterwards. Not all women who have periods get PMS."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

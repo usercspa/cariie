@@ -1,0 +1,40 @@
+{
+  "id": "52411ca4-e779-4287-995c-1b8f576d38b3",
+  "name": "Period pain",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "Periodpain-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "You can take ibuprofen and aspirin to help manage your pain.\n\nHowever, do not take ibuprofen or aspirin if you have asthma or stomach, kidney or liver problems. Aspirin should not be taken by anyone under 16 years of age.\n\nIf ordinary painkillers do not help, see a doctor"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "f7f47111-e118-4bf4-8424-3c9f9da7c9f2",
+  "name": "Period pain info",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Period pain happens when the muscular wall of the womb tightens (contracts). \nIt\u0027s usually felt as painful muscle cramps in the tummy, which can spread to the back and thighs."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

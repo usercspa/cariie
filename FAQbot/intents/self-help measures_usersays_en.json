@@ -1,0 +1,41 @@
+[
+  {
+    "id": "d9579e95-e7df-4c97-a787-e3a879f77bfb",
+    "data": [
+      {
+        "text": "self care methods?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "c8b88f04-fac5-41d9-8133-9725111942f6",
+    "data": [
+      {
+        "text": "what should I do to keep myself healthy",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "fdffa3a1-8d1f-4cba-9064-b1a61aff39bc",
+    "data": [
+      {
+        "text": "self-help measures",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "937e63a1-bc79-4878-8d56-e9d67032c7af",
+    "data": [
+      {
+        "text": "forgot tampon",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "2e3c55f0-b3b9-4065-a6ac-8732b87dc1a0",
+    "data": [
+      {
+        "text": "what if I forgot to remove my tampon",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

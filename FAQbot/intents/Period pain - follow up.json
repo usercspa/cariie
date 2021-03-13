@@ -1,0 +1,39 @@
+{
+  "id": "98e60ebd-5ba6-4960-8faa-3d54760dab46",
+  "parentId": "52411ca4-e779-4287-995c-1b8f576d38b3",
+  "rootParentId": "52411ca4-e779-4287-995c-1b8f576d38b3",
+  "name": "Period pain - follow up",
+  "auto": true,
+  "contexts": [
+    "Periodpain-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Periodpain.Periodpain-custom",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "You can try putting a heat pad or hot water bottle (wrapped in a tea towel) on your tummy, taking a warm bath or shower and massaging around your lower abdomen"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
