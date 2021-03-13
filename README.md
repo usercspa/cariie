@@ -24,6 +24,8 @@ Call +1 619-478-0162 for testing
 
 **4. Data analytics dashboard**
 
+[Figma prototype](https://www.figma.com/proto/ATyt6VVXPdEsVJNnJq4RHt/Cariie?node-id=0%3A1&scaling=contain) 
+
 ## Install:
 
 **1. Register via Interactive Voice Response (IVR)**
