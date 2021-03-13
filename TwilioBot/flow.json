@@ -1,0 +1,605 @@
+{
+  "description": "A New Flow",
+  "states": [
+    {
+      "name": "Trigger",
+      "type": "trigger",
+      "transitions": [
+        {
+          "next": "Greetings",
+          "event": "incomingMessage"
+        },
+        {
+          "next": "Welcome",
+          "event": "incomingCall"
+        },
+        {
+          "event": "incomingRequest"
+        }
+      ],
+      "properties": {
+        "offset": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "Welcome",
+      "type": "gather-input-on-call",
+      "transitions": [
+        {
+          "next": "getName",
+          "event": "keypress"
+        },
+        {
+          "next": "getName",
+          "event": "speech"
+        },
+        {
+          "event": "timeout"
+        }
+      ],
+      "properties": {
+        "voice": "woman",
+        "speech_timeout": "auto",
+        "offset": {
+          "x": 150,
+          "y": 200
+        },
+        "loop": 1,
+        "finish_on_key": "#",
+        "say": "Hi there, would you like to sign up for Cariie? Press any keys to continue with the sign up process.",
+        "language": "en-US",
+        "stop_gather": true,
+        "gather_language": "en",
+        "profanity_filter": "true",
+        "timeout": 5
+      }
+    },
+    {
+      "name": "getName",
+      "type": "gather-input-on-call",
+      "transitions": [
+        {
+          "event": "keypress"
+        },
+        {
+          "next": "name",
+          "event": "speech"
+        },
+        {
+          "event": "timeout"
+        }
+      ],
+      "properties": {
+        "voice": "woman",
+        "speech_timeout": "auto",
+        "offset": {
+          "x": 140,
+          "y": 450
+        },
+        "loop": 1,
+        "finish_on_key": "#",
+        "say": "What's your name?",
+        "language": "en-US",
+        "stop_gather": true,
+        "gather_language": "en",
+        "profanity_filter": "true",
+        "timeout": 5
+      }
+    },
+    {
+      "name": "name",
+      "type": "make-http-request",
+      "transitions": [
+        {
+          "next": "getNumber",
+          "event": "success"
+        },
+        {
+          "next": "getNumber",
+          "event": "failed"
+        }
+      ],
+      "properties": {
+        "offset": {
+          "x": -200,
+          "y": 650
+        },
+        "method": "POST",
+        "content_type": "application/x-www-form-urlencoded;charset=utf-8",
+        "url": "https://hooks.zapier.com/hooks/catch/9732297/o7h761v/"
+      }
+    },
+    {
+      "name": "getNumber",
+      "type": "gather-input-on-call",
+      "transitions": [
+        {
+          "event": "keypress"
+        },
+        {
+          "next": "number",
+          "event": "speech"
+        },
+        {
+          "event": "timeout"
+        }
+      ],
+      "properties": {
+        "voice": "woman",
+        "speech_timeout": "auto",
+        "offset": {
+          "x": 130,
+          "y": 830
+        },
+        "loop": 1,
+        "finish_on_key": "#",
+        "say": "Can I use the number you are calling to register you? If not, can you key in a number?",
+        "language": "en-US",
+        "stop_gather": true,
+        "gather_language": "en",
+        "profanity_filter": "true",
+        "timeout": 5
+      }
+    },
+    {
+      "name": "number",
+      "type": "make-http-request",
+      "transitions": [
+        {
+          "next": "getAge",
+          "event": "success"
+        },
+        {
+          "next": "getAge",
+          "event": "failed"
+        }
+      ],
+      "properties": {
+        "offset": {
+          "x": -190,
+          "y": 1060
+        },
+        "method": "POST",
+        "content_type": "application/x-www-form-urlencoded;charset=utf-8",
+        "url": "https://hooks.zapier.com/hooks/catch/9732297/o7h761v/"
+      }
+    },
+    {
+      "name": "age",
+      "type": "make-http-request",
+      "transitions": [
+        {
+          "next": "getPeriodStart",
+          "event": "success"
+        },
+        {
+          "next": "getPeriodStart",
+          "event": "failed"
+        }
+      ],
+      "properties": {
+        "offset": {
+          "x": -180,
+          "y": 1350
+        },
+        "method": "POST",
+        "content_type": "application/x-www-form-urlencoded;charset=utf-8",
+        "url": "https://hooks.zapier.com/hooks/catch/9732297/o7h761v/"
+      }
+    },
+    {
+      "name": "period_start",
+      "type": "make-http-request",
+      "transitions": [
+        {
+          "next": "Bye",
+          "event": "success"
+        },
+        {
+          "next": "Bye",
+          "event": "failed"
+        }
+      ],
+      "properties": {
+        "offset": {
+          "x": -180,
+          "y": 1640
+        },
+        "method": "POST",
+        "content_type": "application/x-www-form-urlencoded;charset=utf-8",
+        "url": "https://hooks.zapier.com/hooks/catch/9732297/o7h761v/"
+      }
+    },
+    {
+      "name": "getAge",
+      "type": "gather-input-on-call",
+      "transitions": [
+        {
+          "event": "keypress"
+        },
+        {
+          "next": "age",
+          "event": "speech"
+        },
+        {
+          "event": "timeout"
+        }
+      ],
+      "properties": {
+        "voice": "woman",
+        "speech_timeout": "auto",
+        "offset": {
+          "x": 150,
+          "y": 1170
+        },
+        "loop": 1,
+        "finish_on_key": "#",
+        "say": "What's your age?",
+        "language": "en-US",
+        "stop_gather": true,
+        "gather_language": "en",
+        "profanity_filter": "true",
+        "timeout": 5
+      }
+    },
+    {
+      "name": "getPeriodStart",
+      "type": "gather-input-on-call",
+      "transitions": [
+        {
+          "event": "keypress"
+        },
+        {
+          "next": "period_start",
+          "event": "speech"
+        },
+        {
+          "event": "timeout"
+        }
+      ],
+      "properties": {
+        "voice": "woman",
+        "speech_timeout": "auto",
+        "offset": {
+          "x": 170,
+          "y": 1480
+        },
+        "loop": 1,
+        "finish_on_key": "#",
+        "say": "Have you got your first period? If yes, is it regular?",
+        "language": "en-US",
+        "stop_gather": true,
+        "gather_language": "en",
+        "profanity_filter": "true",
+        "timeout": 5
+      }
+    },
+    {
+      "name": "Bye",
+      "type": "say-play",
+      "transitions": [
+        {
+          "event": "audioComplete"
+        }
+      ],
+      "properties": {
+        "offset": {
+          "x": 69,
+          "y": 1836
+        },
+        "loop": 1,
+        "say": "Cool! You have successfully registered. You can now use the period tracking function for FREE by texting the same number. Goodbye!"
+      }
+    },
+    {
+      "name": "Start",
+      "type": "send-and-wait-for-reply",
+      "transitions": [
+        {
+          "next": "startdate",
+          "event": "incomingMessage"
+        },
+        {
+          "event": "timeout"
+        },
+        {
+          "next": "Start",
+          "event": "deliveryFailure"
+        }
+      ],
+      "properties": {
+        "offset": {
+          "x": -860,
+          "y": 390
+        },
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "from": "{{flow.channel.address}}",
+        "body": "When did your period start this month?",
+        "timeout": "3600"
+      }
+    },
+    {
+      "name": "startdate",
+      "type": "make-http-request",
+      "transitions": [
+        {
+          "next": "End",
+          "event": "success"
+        },
+        {
+          "next": "End",
+          "event": "failed"
+        }
+      ],
+      "properties": {
+        "offset": {
+          "x": -1260,
+          "y": 590
+        },
+        "method": "POST",
+        "content_type": "application/x-www-form-urlencoded;charset=utf-8",
+        "url": "https://hooks.zapier.com/hooks/catch/9732297/o7h761v/"
+      }
+    },
+    {
+      "name": "Greetings",
+      "type": "send-message",
+      "transitions": [
+        {
+          "next": "Start",
+          "event": "sent"
+        },
+        {
+          "next": "Greetings",
+          "event": "failed"
+        }
+      ],
+      "properties": {
+        "offset": {
+          "x": -860,
+          "y": 100
+        },
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "from": "{{flow.channel.address}}",
+        "to": "{{contact.channel.address}}",
+        "body": "Hello, thanks for using Cariie period tracking service."
+      }
+    },
+    {
+      "name": "enddate",
+      "type": "make-http-request",
+      "transitions": [
+        {
+          "next": "pain",
+          "event": "success"
+        },
+        {
+          "next": "pain",
+          "event": "failed"
+        }
+      ],
+      "properties": {
+        "offset": {
+          "x": -1270,
+          "y": 850
+        },
+        "method": "POST",
+        "content_type": "application/x-www-form-urlencoded;charset=utf-8",
+        "url": "https://hooks.zapier.com/hooks/catch/9732297/o7h761v/"
+      }
+    },
+    {
+      "name": "painlevel",
+      "type": "make-http-request",
+      "transitions": [
+        {
+          "next": "flow",
+          "event": "success"
+        },
+        {
+          "next": "flow",
+          "event": "failed"
+        }
+      ],
+      "properties": {
+        "offset": {
+          "x": -1270,
+          "y": 1080
+        },
+        "method": "POST",
+        "content_type": "application/x-www-form-urlencoded;charset=utf-8",
+        "url": "https://hooks.zapier.com/hooks/catch/9732297/o7h761v/"
+      }
+    },
+    {
+      "name": "flowsize",
+      "type": "make-http-request",
+      "transitions": [
+        {
+          "next": "info",
+          "event": "success"
+        },
+        {
+          "next": "info",
+          "event": "failed"
+        }
+      ],
+      "properties": {
+        "offset": {
+          "x": -1280,
+          "y": 1370
+        },
+        "method": "POST",
+        "content_type": "application/x-www-form-urlencoded;charset=utf-8",
+        "url": "https://hooks.zapier.com/hooks/catch/9732297/o7h761v/"
+      }
+    },
+    {
+      "name": "additionalinfo",
+      "type": "make-http-request",
+      "transitions": [
+        {
+          "next": "GoodBye",
+          "event": "success"
+        },
+        {
+          "next": "GoodBye",
+          "event": "failed"
+        }
+      ],
+      "properties": {
+        "offset": {
+          "x": -1290,
+          "y": 1650
+        },
+        "method": "POST",
+        "content_type": "application/x-www-form-urlencoded;charset=utf-8",
+        "url": "https://hooks.zapier.com/hooks/catch/9732297/o7h761v/"
+      }
+    },
+    {
+      "name": "End",
+      "type": "send-and-wait-for-reply",
+      "transitions": [
+        {
+          "next": "enddate",
+          "event": "incomingMessage"
+        },
+        {
+          "event": "timeout"
+        },
+        {
+          "next": "End",
+          "event": "deliveryFailure"
+        }
+      ],
+      "properties": {
+        "offset": {
+          "x": -870,
+          "y": 670
+        },
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "from": "{{flow.channel.address}}",
+        "body": "When did your period end this month?",
+        "timeout": "3600"
+      }
+    },
+    {
+      "name": "pain",
+      "type": "send-and-wait-for-reply",
+      "transitions": [
+        {
+          "next": "painlevel",
+          "event": "incomingMessage"
+        },
+        {
+          "event": "timeout"
+        },
+        {
+          "next": "pain",
+          "event": "deliveryFailure"
+        }
+      ],
+      "properties": {
+        "offset": {
+          "x": -890,
+          "y": 950
+        },
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "from": "{{flow.channel.address}}",
+        "body": "On a 5 point scale (0 - no pain, 5 - very painful), how painful was your period?",
+        "timeout": "3600"
+      }
+    },
+    {
+      "name": "flow",
+      "type": "send-and-wait-for-reply",
+      "transitions": [
+        {
+          "next": "flowsize",
+          "event": "incomingMessage"
+        },
+        {
+          "event": "timeout"
+        },
+        {
+          "next": "flow",
+          "event": "deliveryFailure"
+        }
+      ],
+      "properties": {
+        "offset": {
+          "x": -900,
+          "y": 1230
+        },
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "from": "{{flow.channel.address}}",
+        "body": "What was the size of flow of your period? (small/ medium/ large)",
+        "timeout": "3600"
+      }
+    },
+    {
+      "name": "info",
+      "type": "send-and-wait-for-reply",
+      "transitions": [
+        {
+          "next": "additionalinfo",
+          "event": "incomingMessage"
+        },
+        {
+          "event": "timeout"
+        },
+        {
+          "next": "info",
+          "event": "deliveryFailure"
+        }
+      ],
+      "properties": {
+        "offset": {
+          "x": -900,
+          "y": 1530
+        },
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "from": "{{flow.channel.address}}",
+        "body": "Do you have any additional information to add?",
+        "timeout": "3600"
+      }
+    },
+    {
+      "name": "GoodBye",
+      "type": "send-message",
+      "transitions": [
+        {
+          "event": "sent"
+        },
+        {
+          "event": "failed"
+        }
+      ],
+      "properties": {
+        "offset": {
+          "x": -900,
+          "y": 1830
+        },
+        "service": "{{trigger.message.InstanceSid}}",
+        "channel": "{{trigger.message.ChannelSid}}",
+        "from": "{{flow.channel.address}}",
+        "to": "{{contact.channel.address}}",
+        "body": "All recorded. Thanks for using Cariie period tracking service. Have a lovely day!"
+      }
+    }
+  ],
+  "initial_state": "Trigger",
+  "flags": {
+    "allow_concurrent_calls": true
+  }
+}
