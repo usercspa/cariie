@@ -23,3 +23,19 @@ Call +1 619-478-0162 for testing
 
 
 **4. Data analytics dashboard**
+
+## Install:
+
+**1. Register via Interactive Voice Response (IVR)**
+
+
+
+
+**2. Monthly report via SMS bot**
+
+
+
+
+**3. Helpline via FAQ bot**
+
+Import FAQbot.zip to Dialogflow
