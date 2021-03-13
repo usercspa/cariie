@@ -1,0 +1,35 @@
+{
+  "id": "fe57da24-f0bb-4da5-971d-e7ddb9ebfd75",
+  "name": "forgot tampon",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "If you forget to remove your tampon, it can become compressed at the top of your vagina.\n\nThis can make it difficult for you to feel the tampon or pull it out.Try using your fingers to grab the string of the tampon or the tampon itself.\n\nIf you still can\u0027t get the tampon out, go to see a doctor"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

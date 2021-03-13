@@ -1,0 +1,38 @@
+{
+  "id": "50c590b5-39ab-4ac2-bd1f-c6c5c2b4bdf8",
+  "name": "Default Fallback Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "I didn\u0027t get that. Can you say it again? I could explain what is a period, sanitary products and situations when you need to see a doctor",
+            "I missed what you said. Say it again? I could explain what is a period, sanitary products and situations when you need to see a doctor",
+            "Sorry, could you say that again? I could explain what is a period, sanitary products and situations when you need to see a doctor",
+            "What was that? I could explain what is a period, sanitary products and situations when you need to see a doctor"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

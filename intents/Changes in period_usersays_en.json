@@ -1,0 +1,54 @@
+[
+  {
+    "id": "32996140-f9db-486e-a75c-944fdeeb2d33",
+    "data": [
+      {
+        "text": "I have longer periods than usual",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "56069473-acbd-4fb2-8c22-93ddd7d6108e",
+    "data": [
+      {
+        "text": "longer periods than usual",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "86f5b822-a829-4f2d-82fa-0dbb6448f663",
+    "data": [
+      {
+        "text": "Period shorter",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "0f6d4e38-9ed5-45e0-9722-fcccaa76400b",
+    "data": [
+      {
+        "text": "Should I see a doctor if my period is longer than others?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

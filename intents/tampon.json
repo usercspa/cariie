@@ -1,0 +1,35 @@
+{
+  "id": "0ae4bef8-eb1a-466a-80f1-339942ccf18e",
+  "name": "tampon",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "It\u0027s not possible for a tampon to get lost inside you. It\u0027ll stay in your vagina after you have inserted it.\n\nThe only other opening is through your cervix at the top of your vagina. But this is too small for a tampon to pass through."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

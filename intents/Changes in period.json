@@ -1,0 +1,35 @@
+{
+  "id": "d913220d-6baf-4938-a318-95bb9434d939",
+  "name": "Changes in period",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Your periods can change – for example, they may last longer or get lighter. This does not necessarily mean there\u0027s a problem, but it does need to be investigated. It might be caused by an infection, abnormalities in the neck of the womb (the cervix) or, in rare cases, it could be cancer.\n\nYou could be pregnant if you miss a period and you\u0027ve had sex. See your GP if you\u0027re not sure"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

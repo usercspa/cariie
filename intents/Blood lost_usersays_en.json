@@ -1,0 +1,41 @@
+[
+  {
+    "id": "83fab98d-a422-4436-acef-ba56f4749876",
+    "data": [
+      {
+        "text": "what is the normal amount of blood lost",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "bba1428a-9896-463a-8e8e-98bfd56610c8",
+    "data": [
+      {
+        "text": "I lost a lot of blood, should I see the doctor?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "42e5d5d8-e738-4224-bda1-f54c05be2b38",
+    "data": [
+      {
+        "text": "how much blood will i lose",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

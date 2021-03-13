@@ -1,0 +1,35 @@
+{
+  "id": "f66528c1-bb49-491f-b514-ac0bc75f2491",
+  "name": "Sanitary products",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "The main types of sanitary products are sanitary pads, tampons and menstrual cups. Sanitary pads are strips of padding that have a sticky side you attach to your underwear to hold them in place. Tampons are small tubes of cotton wool that you insert into your vagina to soak up the blood before it comes out of your body. Menstrual cups are made from silicone and you put it inside your vagina."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

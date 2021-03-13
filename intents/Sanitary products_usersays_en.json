@@ -1,0 +1,80 @@
+[
+  {
+    "id": "0852fdd0-9b8d-4688-9222-b21de9a2e28f",
+    "data": [
+      {
+        "text": "what can i use",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "a7a9eee9-85e7-4a57-be21-299ae0c4363a",
+    "data": [
+      {
+        "text": "what should i use",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "7c353b48-65f1-4fbb-8aed-258f7d3c46be",
+    "data": [
+      {
+        "text": "sanitary pads",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "64cdc9b3-a22e-48e8-a44b-8a31c55249db",
+    "data": [
+      {
+        "text": "sanitary products",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "c4c3c147-d4a6-480f-8273-4a6880f1bbc0",
+    "data": [
+      {
+        "text": "what products would you recommend?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "e9e805ec-1bf3-43a7-b04c-6b3780ffbce7",
+    "data": [
+      {
+        "text": "pad vs tampon",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

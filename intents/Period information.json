@@ -1,0 +1,35 @@
+{
+  "id": "e7fd9f81-4f8c-4c90-b66e-7f8abc4ee77e",
+  "name": "Period information",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "A period is the part of the menstrual cycle when a woman bleeds from her vagina for a few days. Your period can last between 3 and 8 days, but it will usually last for about 5 days. The bleeding tends to be heaviest in the first 2 days."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
