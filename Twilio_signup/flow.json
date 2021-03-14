@@ -29,11 +29,11 @@
       "type": "gather-input-on-call",
       "transitions": [
         {
-          "next": "getName",
+          "next": "getNumber",
           "event": "keypress"
         },
         {
-          "next": "getName",
+          "next": "getNumber",
           "event": "speech"
         },
         {
@@ -55,61 +55,6 @@
         "gather_language": "en",
         "profanity_filter": "true",
         "timeout": 5
-      }
-    },
-    {
-      "name": "getName",
-      "type": "gather-input-on-call",
-      "transitions": [
-        {
-          "event": "keypress"
-        },
-        {
-          "next": "name",
-          "event": "speech"
-        },
-        {
-          "event": "timeout"
-        }
-      ],
-      "properties": {
-        "voice": "woman",
-        "speech_timeout": "auto",
-        "offset": {
-          "x": 140,
-          "y": 450
-        },
-        "loop": 1,
-        "finish_on_key": "#",
-        "say": "What's your name?",
-        "language": "en-US",
-        "stop_gather": true,
-        "gather_language": "en",
-        "profanity_filter": "true",
-        "timeout": 5
-      }
-    },
-    {
-      "name": "name",
-      "type": "make-http-request",
-      "transitions": [
-        {
-          "next": "getNumber",
-          "event": "success"
-        },
-        {
-          "next": "getNumber",
-          "event": "failed"
-        }
-      ],
-      "properties": {
-        "offset": {
-          "x": -200,
-          "y": 650
-        },
-        "method": "POST",
-        "content_type": "application/x-www-form-urlencoded;charset=utf-8",
-        "url": "https://hooks.zapier.com/hooks/catch/9732297/o7h761v/"
       }
     },
     {
