@@ -17,7 +17,7 @@ Try it out:
 
 ## 2. Monthly reporting via SMS bot
 
-**Text +1 413-289-5266**
+**Text +1 413-289-5266** (verification needed - please contact us to add you as tester)
 
 
 ## 3. Helpline via FAQ bot
